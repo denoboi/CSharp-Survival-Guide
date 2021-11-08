@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Methods : MonoBehaviour
 {
-    public GameObject cube;
+    public int total;
+    public int total2;
 
-
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ChangeColor(cube, Color.red);
-        }
+        total = Sum(5,2);
+        total2 = Sum(9,2);
     }
 
-    void ChangeColor(GameObject obj, Color color)
+
+    private int Sum(int a, int b)
     {
-        obj.GetComponent<MeshRenderer>().material.color = color;
+
+        return a + b;
     }
 }
