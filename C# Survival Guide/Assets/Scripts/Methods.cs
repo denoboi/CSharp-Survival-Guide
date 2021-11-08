@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class Methods : MonoBehaviour
 {
-    public int health;
+    public GameObject cube;
 
-    public void BossDamage(int bossDamage)
-    {
-        health -= bossDamage;
-    }
-
-    public void Healer(int heal)
-    {
-        health += heal;
-    }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            BossDamage(20);
+            ChangeColor(cube, Color.red);
         }
+    }
 
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            Healer(10);
-        }
+    void ChangeColor(GameObject obj, Color color)
+    {
+        obj.GetComponent<MeshRenderer>().material.color = color;
     }
 }
