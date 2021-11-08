@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Methods : MonoBehaviour
 {
-    
-    void Start()
+    public int health;
+
+    public void BossDamage(int bossDamage)
     {
-        Sum(5, 2);
+        health -= bossDamage;
     }
 
-
-    private void Sum(int a, int b)
+    public void Healer(int heal)
     {
-        Debug.Log(a * b);
+        health += heal;
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            BossDamage(20);
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            Healer(10);
+        }
     }
 }
