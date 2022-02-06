@@ -228,10 +228,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 415668540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766ac1f8d9096fc4e9779eeec1bc5a0b, type: 3}
+  m_Script: {fileID: 11500000, guid: ee656f5ea5af3a74e92d66fc16d8b4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 415668540}
+  speed: 0
+  isPositive: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +337,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -409,20 +409,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c052f25253a19747bf9f6e7349f197c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quiz1: 0
-  quiz2: 0
-  quiz3: 0
-  quiz4: 0
-  quiz5: 0
