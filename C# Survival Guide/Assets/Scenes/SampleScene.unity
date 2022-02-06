@@ -404,7 +404,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2da4dbe6f2dd047a57223b8f915805, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c052f25253a19747bf9f6e7349f197c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
+  quiz1: 0
+  quiz2: 0
+  quiz3: 0
+  quiz4: 0
+  quiz5: 0
