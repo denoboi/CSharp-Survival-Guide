@@ -5,6 +5,7 @@ using UnityEngine;
 public class ConditionStatements : MonoBehaviour
 {
     public int points;
+    private bool hasSaidMessage;
 
 
     // Start is called before the first frame update
@@ -19,6 +20,12 @@ public class ConditionStatements : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             points += 10;
+        }
+
+        if(points >= 50 && hasSaidMessage == false)
+        {
+            Debug.Log("You are awesome!");
+            hasSaidMessage = true;
         }
     }
 }
