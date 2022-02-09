@@ -12,12 +12,12 @@ public class ForLoops : MonoBehaviour
             Debug.Log(i);
         }
 
-        for (int i = 10; i < 20; i+=2)
+        for (int i = 10; i <= 20; i+=2)
         {
             Debug.Log(i);
         }
 
-        for (int i = 20; i < 30; i++)
+        for (int i = 20; i <= 30; i++)
         {
             if(i % 2 == 1)
             {
