@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Methods : MonoBehaviour
+public class Methods3 : MonoBehaviour
 {
+    //return type methods
+
+
     public int total;
     public int total2;
 
