@@ -418,6 +418,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bc3bf24ce62b46488c54f8e5986a0af, type: 3}
+  m_Script: {fileID: 11500000, guid: a679b22bd197ea44da01c704373c72a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  names:
+  - Ahmet
+  - Ali
+  - Ayse
+  - Denoboi
+  - Ezgi
+  ages: 050000000a000000360000001e0000001d000000
+  cars:
+  - Ford
+  - BMW
+  - Ferrari
+  - Koenigsegg
+  - Tofas
