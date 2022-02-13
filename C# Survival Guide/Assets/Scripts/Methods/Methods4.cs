@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Methods4 : MonoBehaviour
 {
-    // using 3 different types of methods
+    public GameObject[] players;
+
     void Start()
     {
-        
+        players = GetAllPlayers();
     }
 
    
@@ -15,4 +16,18 @@ public class Methods4 : MonoBehaviour
     {
         
     }
+
+    private GameObject[] GetAllPlayers()
+    {
+        GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach(var p in allPlayers)
+        {
+            p.GetComponent<Transform>().position = new Vector3(Random.Range(0, 100), Random.Range(0,100), Random.Range(0,100));
+           
+        }
+
+        return allPlayers;
+    }
+
 }
