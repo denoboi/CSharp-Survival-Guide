@@ -31,9 +31,4 @@ public class Player : MonoBehaviour
         rockets = new WeaponStats("Rockets",0.75f, 3);  
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
